@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    background-color: white;
+}
+#row2{
+    display: flex;
+}
+#right{
+    background-color: rgb(36, 35, 35);
+    background-image: url(../assest/photographer_index.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 80vw;
+    position: relative;
+}
+#left{
+    height: 100vh;
+    background-color: rgb(36, 35, 35);
+    color: rgb(189, 78, 78);
+    width: 20vw;
+    position: relative;
+}
+#name{
+    margin: 20px;
+}
+#txt-1{
+    position: absolute;
+    background: space; 
+    left: 8%;
+}
+.txt1style{
+    font-size: 4vw;
+    letter-spacing: 3px;
+    font-family: monospace;
+    color: rgb(255, 204, 184);
+    text-shadow: limegreen 0.5px 1px 2px;
+    bottom: 10%;
+}
+#txt-2{
+    position: absolute;
+    left: 5%;
+}
+.txt2style{
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-size: 4vw;
+    color: rgb(255, 230, 220);
+    text-shadow: rgb(159, 36, 175) 2px 2px 2px;
+    bottom: 6%;
+}
+.left2{
+    animation: myframe 0.7s ease;
+    animation-fill-mode: forwards;
+}
+.right2{
+    animation: myframe2 0.7s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myframe{
+    from {
+        width: 20%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+@keyframes myframe2{
+    from {
+        width: 80%;
+    }
+
+    to {
+        width: 20%;
+    }
+}
